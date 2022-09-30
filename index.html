@@ -1,45 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/swiper-bundle.css">
-    <link rel="stylesheet" href="./styles/main.css">
-    <title>Panteon</title>
+    <link rel="stylesheet" href="styles/swiper-bundle.css" />
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Boeing</title>
 </head>
 
 <body>
 
     <!-- Header -->
-    <header class="header" id="header">
-        <div class="header__bg">
-            <img src="./img/header/header-img.jpg" alt="">
-        </div>
+    <header class="header">
         <div class="container">
-            <nav class="nav">
-                <div class="nav__logo">
-                    <a href="#"><img src="./img/logo.png" alt=""></a>
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <a href="#"><img src="./img/logo.svg" alt="logo"></a>
                 </div>
-                <ul class="nav__list">
-                    <li><a class="nav__list__link" href="#">О нас</a></li>
-                    <li><a class="nav__list__link" href="#">Галерея</a></li>
-                    <li><a class="nav__list__link" href="#">Абонементы</a></li>
-                    <li><a class="nav__list__link" href="#">Тренеры</a></li>
-                    <li><a class="nav__list__link" href="#">Контакты</a></li>
-                </ul>
-                <a class="nav__phone" href="tel:+74964161916">
-                    +7 (496) 416-19-16
-                </a>
-            </nav>
-
-            <div class="header__main">
-                <h1 class="header__title">Фитнес клуб Пантеон</h1>
-                <h3 class="header__subtitle">Лучше нас только боги</h3>
-                <button class="header__btn open_popup" type="button" id="open_popup"></button>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li><a href="#about-trainer">что такое авиатренажер?</a></li>
+                        <li><a href="#geography">где летать?</a></li>
+                        <li><a href="#gift-for-flying">цены</a></li>
+                        <li><a href="#reviews">отзывы</a></li>
+                        <li><a href="#contacts">контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header__contacts">
+                    <address>москва, Автозаводская улица, д. 18 <br>
+                        ТРЦ Ривьера, 3 этаж</address>
+                    <a href="tel:+74952284708"> +7 (495) 228-47-08</a>
+                </div>
             </div>
-
             <!-- Burger -->
             <nav class="navbar">
                 <div class="navbar__wrap">
@@ -51,643 +45,459 @@
                         </div>
                     </div>
                     <ul class="menu" id="menu">
-                        <ul class="special">
-                            <li><a class="nav__list__link" href="#">Тренеры</a></li>
-                            <li><a class="nav__list__link" href="#">Контакты</a></li>
-                            <li><a class="nav__list__link" href="tel:+74964161916">+7 (496) 416-19-16</a>
-                            </li>
-                        </ul>
-                        <ul class="special">
-                            <li><a class="nav__list__link" href="#">О нас</a></li>
-                            <li><a class="nav__list__link" href="#">Галерея</a></li>
-                            <li><a class="nav__list__link" href="#">Абонементы</a></li>
-                        </ul>
+                        <li><a href="#about-trainer">что такое авиатренажер?</a></li>
+                        <li><a href="#geography">где летать?</a></li>
+                        <li><a href="#gift-for-flying">цены</a></li>
+                        <li><a href="#reviews">отзывы</a></li>
+                        <li><a href="#contacts">контакты</a></li>
                     </ul>
                 </div>
-                <div class="popup" id="popup"></div>
             </nav>
+
+            <div class="popup" id="popup"></div>
         </div>
 
-        <div class="header__social">
-            <a href="https://www.instagram.com/">
-                <img src="./img/header/instagram.svg" alt="">
-                <img class="disapear" src="./img/header/instagram2.svg" alt="">
-            </a>
-            <a href="https://vk.com/">
-                <img src="./img/header/vk.svg" alt="">
-                <img class="disapear" src="./img/header/vk2.svg" alt="">
-            </a>
-        </div>
     </header> <!-- / Header -->
 
-    <!-- Lifestyle -->
-    <section class="lifestyle" id="lifestyle">
-        <div class="container-inner">
-            <div class="lifestyle__inner">
-                <div class="lifestyle__images">
-                    <div class="lifestyle__image1">
-                        <img src="./img/lifestyle/lifestyle1.jpg" alt="">
-                    </div>
-                    <div class="lifestyle__image2">
-                        <img src="./img/lifestyle/lifestyle2.jpg" alt="">
-                    </div>
+    <!-- Sertificate -->
+    <div class="sertificate">
+        <div class="sertificate-img">
+            <img src="./img/pilot_transparent.png" alt="pilot">
+        </div>
+        <div class="sertificate-gradient"></div>
+        <div class="container">
+            <div class="sertificate-wrapper">
+                <div class="sertificate__title">
+                    <img class="title-pic" src="./img/Title.svg" alt="">
                 </div>
-                <div class="lifestyle__info">
-                    <h2 class="lifestyle__title">Новый образ жизни</h2>
-                    <p class="lifestyle__text">Став частью нашей команды, вы сможете изменить привычный ритм жизни и
-                        сделать каждый свой день особенным, а формат наших тренировок позволит вам раскрыть потенциал
-                        вашего тела на 100%.</p>
-                    <button class="common-btn lifestyle__btn" type="button" id="open_popup2"></button>
-                </div>
+                <img class="title-mini" src="./img/title-mini.svg" alt="">
+                <table class="table2">
+                    <caption>Подарочные сертификаты</caption>
+                    <tbody>
+                        <tr>
+                            <th class="table-head2">30 мин</th>
+                            <td>5000 - 00</td>
+                        </tr>
+                        <tr>
+                            <th class="table-head2">60 мин</th>
+                            <td>9000 - 00</td>
+                        </tr>
+                        <tr>
+                            <th>120 мин</th>
+                            <td>18000 - 00</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
-        <div class="container">
-            <div class="lifestyle__advantages">
-                <a href="#" class="lifestyle__advantages__item">
-                    <img src="./img/lifestyle/icon1.svg" alt="">
-                    <p>Полностью <br> укомплектованный зал</p>
-                </a>
-                <a href="#" class="lifestyle__advantages__item">
-                    <img src="./img/lifestyle/icon2.svg" alt="">
-                    <p>Профессиональное <br> оборудование</p>
-                </a>
-                <a href="#" class="lifestyle__advantages__item">
-                    <img src="./img/lifestyle/icon3.svg" alt="">
-                    <p>Удобное расположение <br> в центре города</p>
-                </a>
-                <a href="#" class="lifestyle__advantages__item">
-                    <img src="./img/lifestyle/icon4.svg" alt="">
-                    <p>Доступная <br> стоимость занятий</p>
-                </a>
-            </div>
-        </div>
-    </section> <!-- / Lifestyle -->
 
-    <!-- Gallery -->
-    <section class="gallery" id="gallery">
-        <div class="container">
-            <div class="container-inner">
-                <h2>Галерея</h2>
-                <!-- Slider main container 1 -->
-                <div class="swiper">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <img src="./img/gallery/slider1/1.jpg" alt="">
+        <!-- Table -->
+        <table class="table">
+            <caption>Подарочные сертификаты</caption>
+            <thead>
+                <tr>
+                    <th class="table-head">30 мин</th>
+                    <th class="table-head">60 мин</th>
+                    <th>120 мин</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>5000 - 00</td>
+                    <td>9000 - 00</td>
+                    <td>18000 - 00</td>
+                </tr>
+            </tbody>
+        </table>
+    </div> <!-- / Sertificate -->
+
+    <!-- Title trainer  -->
+    <div class="container">
+        <div class="title-trainer">
+            авиатренажеры <span>boeing 737</span> и <span>airbus 320</span>
+            на подвижной платформе
+        </div>
+    </div> <!-- / Title trainer  -->
+
+    <!-- About trainer  -->
+    <div class="container">
+        <div class="about-trainer" id="about-trainer">
+            <h2 class="about-trainer__title common-title">что такое авиатренажер?</h2>
+            <a class="about-trainer__link" href="#">
+                <img src="./img/trainer.png" alt="trainer>
+            </a>
+        </div>
+    </div> <!-- / About trainer  -->
+
+    <!-- Geography -->
+    <div class=" container">
+                <div class="geography" id="geography">
+                    <h2 class="common-title geography">куда можно летать?</h2>
+                    <div class="geography-slider">
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="slider-title">
+                                        <h3>круг в домодедово</h3>
+                                    </div>
+                                    <img class="slider-image" src="./img/slider2.jpg" alt="">
+                                    <p class="slider-text">Несколько кругов вокруг одного из крупнейших аэропортов
+                                        региона —
+                                        Дубаи, во
+                                        время
+                                        полета вы сможете
+                                        увидеть с высоты птичьего полета легендарный высочайший в мире небоскреб...</p>
+                                    <a class="slider-link" href="#">Читать далее</a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider-title">
+                                        <h3>круг в дубае</h3>
+                                    </div>
+                                    <img class="slider-image" src="./img/slider.jpg" alt="">
+                                    <p class="slider-text">Несколько кругов вокруг одного из крупнейших аэропортов
+                                        региона —
+                                        Дубаи, во
+                                        время
+                                        полета вы сможете
+                                        увидеть с высоты птичьего полета легендарный высочайший в мире небоскреб...</p>
+                                    <a class="slider-link" href="#">Читать далее</a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider-title">
+                                        <h3>круг в домодедово</h3>
+                                    </div>
+                                    <img class="slider-image" src="./img/slider2.jpg" alt="">
+                                    <p class="slider-text">Несколько кругов вокруг одного из крупнейших аэропортов
+                                        региона —
+                                        Дубаи, во
+                                        время
+                                        полета вы сможете
+                                        увидеть с высоты птичьего полета легендарный высочайший в мире небоскреб...</p>
+                                    <a class="slider-link" href="#">Читать далее</a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="slider-title">
+                                        <h3>круг в дубае</h3>
+                                    </div>
+                                    <img class="slider-image" src="./img/slider.jpg" alt="">
+                                    <p class="slider-text">Несколько кругов вокруг одного из крупнейших аэропортов
+                                        региона —
+                                        Дубаи, во
+                                        время
+                                        полета вы сможете
+                                        увидеть с высоты птичьего полета легендарный высочайший в мире небоскреб...</p>
+                                    <a class="slider-link" href="#">Читать далее</a>
+                                </div>
+
+                            </div>
                         </div>
-                        <div class="swiper-slide">
-                            <img src="./img/gallery/slider1/2.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./img/gallery/slider1/3.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./img/gallery/slider1/4.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./img/gallery/slider1/1.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./img/gallery/slider1/2.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./img/gallery/slider1/3.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./img/gallery/slider1/4.jpg" alt="">
-                        </div>
+                        <!-- If we need scrollbar -->
+                        <!-- <div class="swiper-scrollbar"></div> -->
                     </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination swiper-pagination1"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev swiper-button-prev1"></div>
+                    <div class="swiper-button-next swiper-button-next2"></div>
+                </div>
+        </div> <!-- / Geography -->
+
+        <!-- Gift for flying -->
+        <div class="gift-for-flying" id="gift-for-flying">
+            <div class="gift-for-flying__bg">
+                <img src="./img/sky_with_cloud.png" alt="">
+                <div class="gift-for-flying__img">
+                    <img src="./img/farther-and-son.png" alt="pic">
+                </div>
+            </div>
+            <div class="gift-for-flying-wrapper">
+                <h3 class="gift-for-flying__title">сертификат на полет - лучший <br> подарок для детей и взрослых</h3>
+                <div class="gift-table">
+                    <table>
+                        <caption>Подарочные сертификаты</caption>
+                        <tbody>
+                            <tr>
+                                <th class="table-head2">30 мин</th>
+                                <td>5000 - 00</td>
+                            </tr>
+                            <tr>
+                                <th class="table-head2">60 мин</th>
+                                <td>9000 - 00</td>
+                            </tr>
+                            <tr>
+                                <th>120 мин</th>
+                                <td>18000 - 00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div> <!-- / Gift for flying -->
+
+        <!-- Differences  -->
+        <div class="differences">
+            <div class="container">
+                <h2 class="common-title">чем отличается boeing от airbus?</h2>
+            </div>
+            <div class="differences-flex">
+                <div class="differences-boeing">
+                    <img src="./img/boeing.png" alt="boeing">
+                </div>
+                <div class="differences-aerobus">
+                    <img src="./img/aerobus.png" alt="aerobus">
+                </div>
+            </div>
+            <div class="container">
+                <div class="differences-list-wrapper">
+                    <ul class="differences-list__boeing">
+                        <li><a href="#">Отличие номер один</a></li>
+                        <li><a href="#">Отличие номер два</a></li>
+                        <li><a href="#">Отличие номер три</a></li>
+                        <li><a href="#">Отличие номер четыре</a></li>
+                    </ul>
+                    <ul class="differences-list__aerobus">
+                        <li><a href="#">Отличие номер один</a></li>
+                        <li><a href="#">Отличие номер два</a></li>
+                        <li><a href="#">Отличие номер три</a></li>
+                        <li><a href="#">Отличие номер четыре</a></li>
+                    </ul>
                 </div>
             </div>
 
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="swiper4">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <ul class="differences-list__boeing">
+                            <li><a href="#">Отличие номер один</a></li>
+                            <li><a href="#">Отличие номер два</a></li>
+                            <li><a href="#">Отличие номер три</a></li>
+                            <li><a href="#">Отличие номер четыре</a></li>
+                        </ul>
+                    </div>
+                    <div class="swiper-slide">
+                        <ul class="differences-list__aerobus">
+                            <li><a href="#">Отличие номер один</a></li>
+                            <li><a href="#">Отличие номер два</a></li>
+                            <li><a href="#">Отличие номер три</a></li>
+                            <li><a href="#">Отличие номер четыре</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <!-- <div class=" swiper-pagination4"></div> -->
 
-            <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
-        </div>
+                <!-- If we need navigation buttons -->
+                <div class="differences-navigation">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+
+            <div class="differences-footer">
+                <p class="differences-footer-text">Несколько кругов вокруг одного из крупнейших аэропортов региона —
+                    Дубаи,
+                    во время полета вы сможете увидеть с высоты птичьего полета легендарный высочайший в мире
+                    небоскребНесколько кругов вокруг одного из крупнейших аэропортов региона — Дубаи, во время полета вы
+                    сможете увидеть с высоты птичьего полета легендарный высочайший в мире небоскреб...</p>
+            </div>
+
+        </div> <!-- / Differences -->
+
+        <!-- Reviews  -->
         <div class="container">
-            <div class="container-inner">
-                <!-- Slider main container 2 -->
+            <h2 class="common-title">отзывы наших гостей</h2>
+            <div class="reviews" id="reviews">
                 <div class="swiper2">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
-                        <div class="swiper-slide">
-                            <img src="./img/gallery/slider2/1.jpg" alt="">
+                        <div class="swiper-slide slider-reviews">
+                            <img class="slider-image" src="./img/reviews1.png" alt="">
+                            <div class="slider-text">
+                                <p>Огромное спасибо компании ТФТаеро организаторам за предоставленную
+                                    возможность воспользоваться сертификатом. Получили огромное удовольствие от полёта,
+                                    сын
+                                    в
+                                    восторге! Спасибо пилоту Алексею за инструктаж. Рекомендую друзьям и вам! И да,
+                                    берите
+                                    сразу
+                                    сеанс от 1 часа.</p>
+                            </div>
                         </div>
-                        <div class="swiper-slide">
-                            <img src="./img/gallery/slider2/2.jpg" alt="">
+                        <div class="swiper-slide slider-reviews">
+                            <img class="slider-image" src="./img/reviews3.png" alt="">
+                            <div class="slider-text">
+                                <p>Большое спасибо инструктору Сергею. Подарила сыновьям 1час полета и
+                                    не
+                                    пожалела. Позитивные эмоции, яркие впечатления , доброжелательность и
+                                    коммуникабельность
+                                    персонала. Вообщем, сюрприз удался. Спасибо. Рекомендую родителям взрослых детей.
+                                </p>
+                            </div>
                         </div>
-                        <div class="swiper-slide">
-                            <img src="./img/gallery/slider2/3.jpg" alt="">
+                        <div class="swiper-slide slider-reviews">
+                            <img class="slider-image" src="./img/reviews2.png" alt="">
+                            <div class="slider-text slider-text__long">
+                                <p>Меня в принципе сложно впечатлить, но вам это сделать удалось!
+                                    Незабываемые ощущение, полное погружение, летал на Боинге 737. Сертификат на 1 час,
+                                    за
+                                    это
+                                    время успел совершить два незабываемых полёта. Пролетел на огромном лайнере ПОД
+                                    мостом
+                                    реки
+                                    Гудзон, в Нью-Йорке, а затем совершил грандиозный полет в Альпах, в грозу, во время
+                                    турбулентности. </p>
+                            </div>
                         </div>
-                        <div class="swiper-slide">
-                            <img src="./img/gallery/slider2/1.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./img/gallery/slider2/2.jpg" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./img/gallery/slider2/3.jpg" alt="">
+                        <div class="swiper-slide slider-reviews">
+                            <img class="slider-image" src="./img/reviews1.png" alt="">
+                            <div class="slider-text">
+                                <p>Огромное спасибо компании ТФТаеро организаторам за предоставленную
+                                    возможность воспользоваться сертификатом. Получили огромное удовольствие от полёта,
+                                    сын
+                                    в
+                                    восторге! Спасибо пилоту Алексею за инструктаж. Рекомендую друзьям и вам! И да,
+                                    берите
+                                    сразу
+                                    сеанс от 1 часа.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <!-- If we need pagination -->
+                <div class=" swiper-pagination2"></div>
+
                 <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev2"></div>
-                <div class="swiper-button-next2"></div>
-
-                <!-- If we need scrollbar -->
-                <div class="swiper-scrollbar2"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
+        </div> <!-- / Reviews  -->
 
-        </div>
-    </section><!-- / Gallery -->
-
-    <!-- Abonements -->
-    <section class="abonements" id="abonements">
-        <div class="container-inner">
-            <h2 class="abonements__title">Абонементы</h2>
-            <!-- grid -->
-            <div class="abonements__grid">
-                <div class="abonements__grid__item">Кол-во занятий</div>
-                <div class="abonements__grid__item weight">1 тренировка</div>
-                <div class="abonements__grid__item weight">4 тренировки</div>
-                <div class="abonements__grid__item weight">8 тренировок</div>
-                <div class="abonements__grid__item weight">12 тренировок</div>
-
-                <hr>
-
-                <div class=" weight">Персональный тренинг
-                    с инструктором</div>
-                <div class="abonements__grid__item2">700 руб.</div>
-                <div class="abonements__grid__item2">2600 руб.
-                    (действителен в течении 3 недель)</div>
-                <div class="abonements__grid__item2">5200 руб.
-                    (действителен в
-                    течении 6 недель)</div>
-                <div class="abonements__grid__item2">7200 руб.
-                    (действителен в
-                    течении 10 недель)</div>
-
-                <div class=" weight">Самостоятельные тренировки
-                    в тренажерном зале</div>
-                <div class="abonements__grid__item3">250 руб.</div>
-                <div class="abonements__grid__item3">
-                    &#8212;</div>
-                <div class="abonements__grid__item3">1500 руб.
-                    (действителен в течении 30 дней)</div>
-                <div class="abonements__grid__item3">2000 руб.
-                    (действителен в
-                    течении 30 дней)</div>
-
-                <div class=" weight">Зал групповых программ</div>
-                <div class="abonements__grid__item4">300 руб.</div>
-                <div class="abonements__grid__item4">
-                    &#8212;</div>
-                <div class="abonements__grid__item4">2000 руб.
-                    (действителен в
-                    течении 30 дней</div>
-                <div class="abonements__grid__item4">2750 руб.
-                    (действителен в течении 45 дней)
-                </div>
-            </div> <!-- / grid -->
-
-            <!-- Slider 1-->
-            <div class="swiper-mobile">
-                <div class="swiper-mobile__wrapper">
-                    <div class="swiper-mobile__item">
-                        Кол-во занятий
-                    </div>
-                    <div class="swiper-mobile__item">
-                        Персональный тренинг
-                        с инструктором
-                    </div>
-                    <div class="swiper-mobile__item">
-                        Самостоятельные тренировки
-                        в тренажерном зале
-                    </div>
-                    <div class="swiper-mobile__item">
-                        Зал групповых программ
-                    </div>
+        <!-- Instructors  -->
+        <div class="container">
+            <h2 class="common-title">наши инструктора</h2>
+            <div class="instructors-wrapper">
+                <div class="instructors">
+                    <a href="#" class="instructors-item">
+                        <img class="instructors-image" src="./img/instructor1.png" alt="instructors">
+                        <h4 class="instructors-title">Иванов Иван</h4>
+                        <h5 class="instructors-subtitle">Летная школа</h5>
+                    </a>
+                    <a href="#" class="instructors-item">
+                        <img class="instructors-image" src="./img/instructor2.png" alt="instructors">
+                        <h4 class="instructors-title">Иванов Иван</h4>
+                        <h5 class="instructors-subtitle">Летная школа</h5>
+                    </a>
+                    <a href="#" class="instructors-item">
+                        <img class="instructors-image" src="./img/instructor3.png" alt="instructors">
+                        <h4 class="instructors-title">Иванов Иван</h4>
+                        <h5 class="instructors-subtitle">Летная школа</h5>
+                    </a>
+                    <a href="#" class="instructors-item">
+                        <img class="instructors-image" src="./img/instructor4.png" alt="instructors">
+                        <h4 class="instructors-title">Иванов Иван</h4>
+                        <h5 class="instructors-subtitle">Летная школа</h5>
+                    </a>
                 </div>
                 <div class="swiper3">
-                    <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <div class="swiper-slide__item">
-                                1 тренировка
-                            </div>
-                            <div class="swiper-slide__item">
-                                700 руб.
-                            </div>
-                            <div class="swiper-slide__item">
-                                250 руб.
-                            </div>
-                            <div class="swiper-slide__item">
-                                300 руб.
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="swiper-slide__item2">
-                                4 тренировки
-                            </div>
-                            <div class="swiper-slide__item2">
-                                2600 руб. <br> (действителен <br> в течении 3 недель)
-                            </div>
-                            <div class="swiper-slide__item2">
-                                &#8212;
-                            </div>
-                            <div class="swiper-slide__item2">
-                                &#8212;
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="swiper-slide__item3">
-                                8 тренировок
-                            </div>
-                            <div class="swiper-slide__item3">
-                                2000 руб. <br> (действителен <br> в течении 30 дней)
-                            </div>
-                            <div class="swiper-slide__item3">
-                                1500 руб. <br> (действителен <br> в течении 30 дней)
-                            </div>
-                            <div class="swiper-slide__item3">
-                                2000 руб. <br> (действителен <br> в течении 30 дней
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="swiper-slide__item4">
-                                12 тренировок
-                            </div>
-                            <div class="swiper-slide__item4">
-                                7200 руб. <br> (действителен <br> в течении 10 недель)
-                            </div>
-                            <div class="swiper-slide__item4">
-                                2000 руб. <br> (действителен <br> в течении 30 дней)
-                            </div>
-                            <div class="swiper-slide__item4">
-                                2750 руб. <br> (действителен <br> в течении 45 дней)
-                            </div>
-                        </div>
-
+                        <a href="#" class="instructors-item swiper-slide">
+                            <img class="instructors-image" src="./img/instructor1.png" alt="instructors">
+                            <h4 class="instructors-title">Иванов Иван</h4>
+                            <h5 class="instructors-subtitle">Летная школа</h5>
+                        </a>
+                        <a href="#" class="instructors-item swiper-slide">
+                            <img class="instructors-image" src="./img/instructor2.png" alt="instructors">
+                            <h4 class="instructors-title">Иванов Иван</h4>
+                            <h5 class="instructors-subtitle">Летная школа</h5>
+                        </a>
+                        <a href="#" class="instructors-item swiper-slide">
+                            <img class="instructors-image" src="./img/instructor3.png" alt="instructors">
+                            <h4 class="instructors-title">Иванов Иван</h4>
+                            <h5 class="instructors-subtitle">Летная школа</h5>
+                        </a>
+                        <a href="#" class="instructors-item swiper-slide">
+                            <img class="instructors-image" src="./img/instructor4.png" alt="instructors">
+                            <h4 class="instructors-title">Иванов Иван</h4>
+                            <h5 class="instructors-subtitle">Летная школа</h5>
+                        </a>
                     </div>
-                </div> <!-- /Slider -->
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev3"></div>
-                <div class="swiper-button-next3"></div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination3"></div>
 
-                <!-- If we need scrollbar -->
-                <div class="swiper-scrollbar3"></div>
-            </div> <!-- /Slider 1-->
-
-            <!-- grid2 -->
-            <h3 class="abonements__subtitle" id="abonements-time">Абонемент по времени</h3>
-            <div class="abonements__grid2">
-                <div class="abonements__grid__item">Тип карты</div>
-                <div class="abonements__grid__item weight">12 месяцев</div>
-                <div class="abonements__grid__item weight">6 месяцев</div>
-                <div class="abonements__grid__item weight">3 месяца</div>
-                <div class="abonements__grid__item weight">1 месяц</div>
-
-                <hr>
-
-                <div class="weight2">Индивидуальная, <br>
-                    полная без ограничения <br>
-                    в посещении / 8:00 – 23:00</div>
-                <div class="abonements__grid__item2">18000
-                    (+200 мин. солярия)</div>
-                <div class="abonements__grid__item2">12000</div>
-                <div class="abonements__grid__item2">7000</div>
-                <div class="abonements__grid__item2">2500</div>
-
-                <div class="weight">Индивидуальная, <br>
-                    дневная / 8:00 – 17:00</div>
-                <div class="abonements__grid__item3">&#8212;</div>
-                <div class="abonements__grid__item3">9500</div>
-                <div class="abonements__grid__item3">5500</div>
-                <div class="abonements__grid__item3">2000</div>
-            </div> <!-- / grid2 -->
-
-            <!-- Slider2 -->
-            <div class="swiper-mobile2">
-                <div class="swiper-mobile__wrapper">
-                    <div class="swiper-mobile__item">
-                        Тип карты
-                    </div>
-                    <div class="swiper-mobile__item">
-                        Индивидуальная, <br>
-                        полная без <br> ограничения
-                        в посещении / <br><span>8:00 – 23:00</span>
-                    </div>
-                    <div class="swiper-mobile__item">
-                        Индивидуальная,
-                        дневная / 8:00 – 17:00
-                    </div>
-                </div>
-                <div class="swiper4">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <div class="swiper-slide__item">
-                                12 месяцев
-                            </div>
-                            <div class="swiper-slide__item">
-                                18000 <br>
-                                (+200 мин. <br> солярия)
-                            </div>
-                            <div class="swiper-slide__item">
-                                &#8212;
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="swiper-slide__item2">
-                                6 месяцев
-                            </div>
-                            <div class="swiper-slide__item2">
-                                12000
-                            </div>
-                            <div class="swiper-slide__item2">
-                                9500
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="swiper-slide__item3">
-                                3 месяца
-                            </div>
-                            <div class="swiper-slide__item3">
-                                7000
-                            </div>
-                            <div class="swiper-slide__item3">
-                                5500
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="swiper-slide__item4">
-                                1 месяц
-                            </div>
-                            <div class="swiper-slide__item4">
-                                2500
-                            </div>
-                            <div class="swiper-slide__item4">
-                                2000
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev4"></div>
-                <div class="swiper-button-next4"></div>
-
-                <!-- If we need scrollbar -->
-                <div class="swiper-scrollbar4"></div>
-            </div> <!-- / Slider2 -->
-
-            <h3 class="single-train__title" id="single-train">Разовые тренировки</h3>
-            <div class="single-train">
-                <div class="single-train__item" ">
-                    <h5>Самостоятельные тренировки <br> в тренажерном зале</h5>
-                    <p>8:00 – 23:00</p>
-                    <img src=" ./img/abonements/clock.svg" alt="clock">
-                    <h6>250₽</h6>
-                    <p>1 тренировка</p>
-                    <button type="button" class="common-btn" id="open_popup3"></button>
-                </div>
-                <div class="single-train__item">
-                    <h5>Персональный тренинг <br>
-                        с инструктором</h5>
-                    <p>8:00 – 23:00</p>
-                    <img src="./img/abonements/clock.svg" alt="clock">
-                    <h6>700₽</h6>
-                    <p>1 тренировка</p>
-                    <button type="button" class="common-btn" id="open_popup4"></button>
-                </div>
-                <div class="single-train__item">
-                    <h5>Зал групповых <br> программ</h5>
-                    <p>8:00 – 23:00</p>
-                    <img src="./img/abonements/clock.svg" alt="clock">
-                    <h6>300₽</h6>
-                    <p>1 тренировка</p>
-                    <button type="button" class="common-btn" id="open_popup5"></button>
-                </div>
-            </div>
-
-
-        </div>
-    </section> <!-- / Abonements -->
-
-    <!-- Coaches -->
-    <section class="coaches" id="coaches">
-        <div class="container">
-            <div class="coaches__wrapper">
-                <h2 class="coaches__title">Тренеры</h2>
-                <div class="swiper5">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <img src="./img/coaches/1.jpg" alt="">
-                            <div class="slider-text">
-                                <h4>Илья Панченко</h4>
-                                <p>Персональный тренер <br>
-                                    Инструктор тренажерного зала <br>
-                                    Опыт работы — 4 года
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./img/coaches/2.jpg" alt="">
-                            <div class="slider-text">
-                                <h4>Екатерина Сосина-Нуньес</h4>
-                                <p>Фитнес-тренер <br>
-                                    Опыт работы — 4 года
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./img/coaches/3.jpg" alt="">
-                            <div class="slider-text">
-                                <h4>Юлия Белова</h4>
-                                <p>Фитнес-тренер <br>
-                                    Опыт работы — 4 года
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./img/coaches/1.jpg" alt="">
-                            <div class="slider-text">
-                                <h4>Илья Панченко</h4>
-                                <p>Персональный тренер <br>
-                                    Инструктор тренажерного зала <br>
-                                    Опыт работы — 4 года
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./img/coaches/2.jpg" alt="">
-                            <div class="slider-text">
-                                <h4>Екатерина Сосина-Нуньес</h4>
-                                <p>Фитнес-тренер <br>
-                                    Опыт работы — 4 года
-                                </p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="./img/coaches/3.jpg" alt="">
-                            <div class="slider-text">
-                                <h4>Юлия Белова</h4>
-                                <p>Фитнес-тренер <br>
-                                    Опыт работы — 4 года
-                                </p>
-                            </div>
-                        </div>
-                    </div>
                     <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev5"></div>
-                    <div class="swiper-button-next5"></div>
-                    <!-- If we need scrollbar -->
-                    <div class="swiper-scrollbar5"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
+                <button class="btn-instructors" type="button">заказать сертификат <br> online</button>
             </div>
-        </div>
-    </section> <!-- / Coaches -->
+        </div> <!-- / Instructors  -->
 
-    <!-- Form -->
-    <section class="form" id="form">
-        <div class="form__img">
-            <img src="./img/form/1.jpg" alt="">
+        <!-- Contacts  -->
+        <div class="container" id="contacts">
+            <h2 class="common-title">контакты</h2>
         </div>
-        <div class="container-inner">
-            <div class="form-block">
-                <h2>Остались вопросы?</h2>
-                <h4>Оставьте Ваш номер телефона <br>
-                    и мы <span>обязательно с Вами свяжемся</span></h4>
-                <form action="">
-                    <input class="form__input" type="text" placeholder="Введите имя">
-                    <input class="form__input" type="tel" placeholder="Введите телефон">
-                    <button class="common-btn form-btn" id="open_popup6" type="button"></button>
-                </form>
+        <div class="contacts-wrapper">
+            <div class="contacts">
+                <img class="contacts-img" src="./img/contacts_1.png" alt="contacts">
+                <img class="contacts-mobile" src="./img/contact-mobile.jpg" alt="contacts">
             </div>
-        </div>
-    </section> <!-- / Form -->
+            <div class="contacts-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2248.0770181377948!2d37.63687111544521!3d55.70503300314336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54bfacdb4fb8f%3A0x4a6bb93dbf5b502e!2z0JDQstGC0L7Qt9Cw0LLQvtC00YHQutCw0Y8g0YPQuy4sIDE4LCDQnNC-0YHQutCy0LAsIDExNTI4MA!5e0!3m2!1sru!2sru!4v1653896903774!5m2!1sru!2sru"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div> <!-- / Contacts  -->
 
-    <!-- Contacts -->
-    <section class="contacts" id="contacts">
-        <iframe
-            src="https://yandex.ru/map-widget/v1/?um=constructor%3A475533f6edd2c0baa7edce71f45f1079f6a37b112edf993296dc4ca98774676a&amp;source=constructor"
-            width="100%" height="567" frameborder="0"></iframe>
-        <div class="contacts__form">
-            <h4>Контакты</h4>
-            <div class="contacts-info">
-                <img src="./img/contacts/location.svg" alt="">
-                <p>г. Орехово-Зуево, ул. Ленина 84</p>
-            </div>
-            <div class="contacts-info">
-                <img src="./img/contacts/clock.svg" alt="">
-                <p>Ежедневно с 8:00 до 23:00</p>
-            </div>
-            <div class="contacts-info">
-                <img src="./img/contacts/phone.svg" alt="">
-                <div>
-                    <p>+7 (496) 416-19-16,</p>
-                    <p>+7 (925) 881-21-70</p>
-                </div>
-            </div>
-            <h5>Подписывайтесь на наши соц.сети</h5>
-            <div class="contacts__media">
-                <a href="https://www.instagram.com">
-                    <img src="./img/contacts/instagram.svg" alt="">
-                </a>
-                <a href="https://vk.com/">
-                    <img src="./img/contacts/vk.svg" alt="">
-                </a>
-            </div>
-        </div>
-    </section> <!-- / Contacts -->
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-wrapper">
-                <div class="footer-item footer-item__logo">
+        <!-- Footer  -->
+        <footer class="footer" id="footer">
+            <div class="container">
+                <div class="footer-adress">
+                    <address class="address">
+                        Москва, Автозаводская улица, 18 <br> ТРЦ Ривьера, 3 этаж, павильон TFT.aero
+                    </address>
                     <div class="footer-logo">
-                        <a href="#"><img src="./img/logo.png" alt=""></a>
-                    </div>
-                    <span>&#xa9; Все права защищены</span>
-                    <span>Орехово-Зуево, 2013-2022</span>
-                </div>
-                <div class="footer-inner">
-                    <div class="footer-item">
-                        <a href="#header">О нас</a>
-                        <a href="#gallery">Галерея</a>
-                        <a href="#abonements">Абонементы</a>
-                    </div>
-                    <div class="footer-item">
-                        <a href="#coaches">Тренеры</a>
-                        <a href="#contacts">Контакты</a>
-                    </div>
-                    <div class="footer-item">
-                        <a href="#abonements">Абонементы</a>
-                        <a href="#abonements-time">Абонемент по времени</a>
-                        <a href="#single-train">Разовые тренировки</a>
+                        <img src="./img/footer-logo.svg" alt="logo">
                     </div>
                 </div>
-
-                <div class="footer-item">
-                    <h5>Наши соц.сети</h5>
-                    <div class="footer-item__media">
-                        <a href="https://www.instagram.com">
-                            <img src="./img/footer/instagram.svg" alt="">
-                        </a>
-                        <a href="https://vk.com/">
-                            <img src="./img/footer/vk.svg" alt="">
-                        </a>
+                <div class="footer-contacts-social">
+                    <div class="footer-contacts">
+                        <a class="footer-email" href="mailto:moscow@tft.aero">moscow@tft.aero</a>
+                        <a class="footer-tel" href="tel:+74952284708"> +7 (495) 228-47-08</a>
                     </div>
-                </div>
-                <div class="footer-item footer-contacts">
-                    <p>г. Орехово-Зуево, ул. Ленина 84</p>
-                    <p>Ежедневно с 8:00 до 23:00</p>
-                    <p>+7 (496) 416-19-16, +7 (925) 881-21-70</p>
-                    <a href="#">Политика конфиденциальности</a>
+                    <div class="footer-social">
+                        <h4 class="footer-social__title">подпишись на нас:</h4>
+                        <div class="footer-social__flex">
+                            <a href="#">
+                                <img src="./img/instagram.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./img/fb.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./img/tik-tok.svg" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="./img/vk.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer> <!-- / Footer -->
-
-
-    <!-- Popup -->
-    <div class="pop-up" id="pop-up">
-        <div class="pop-up__container">
-            <div class="pop-up__body">
-                <form action="pop-up__form">
-                    <h2 class="pop-up__title">Обратная связь</h2>
-
-                    <input class="pop-up__form__input" type="text" placeholder="Ваше имя" maxlength="30">
-
-                    <input class="pop-up__form__input" type="tel" placeholder="Ваш номер телефона" maxlength="18">
-
-                    <textarea class="pop-up__form__textarea" name="feedback" id="/" cols="30" rows="10"
-                        placeholder="Ваше сообщение"></textarea>
-
-                    <button class="pop-up__form__btn" type="submit">Заказать звонок</button>
-                </form>
-                <div class="pop-up__close" id="pop-up__close">&#10006</div>
+            <div class="footer-logo__mobile">
+                <img src="./img/footer-logo.svg" alt="logo">
             </div>
-        </div>
-    </div><!--  /Popup -->
+        </footer> <!-- / Footer  -->
 
-    <script src="./js/swiper-bundle.js"></script>
-    <script src="./js/main.js"></script>
+
+        <!-- Scripts -->
+        <script src="./scripts/swiper-bundle.js"></script>
+        <script src="./scripts/main.js"></script>
 </body>
 
 </html>
